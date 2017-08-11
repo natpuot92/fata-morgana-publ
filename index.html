@@ -319,11 +319,19 @@
         <div class="popup__desc popup-fotos__desc">Оставьте Ваши данные или напишите интересующий вас вопрос и в течении 10 минут мы свяжемся с Вами</div>
         <form action="#" method="#" id="popup-fotos__form" class="popup-fotos__form">
           <div class="popup__form-container popup-fotos__form-container">
-            <input type="text" name="fotos__name" placeholder="Имя" class="popup__form-input popup__fotos-form-input">
-            <input type="tel" name="fotos__tel" placeholder="Телефон" class="popup__form-input popup__fotos-form-input">
-            <input type="email" name="fotos__email" placeholder="Почта" class="popup__form-input popup__fotos-form-input">
+            <div class="form-block form-block-fotos">
+              <input type="text" name="fotos__name" placeholder="Имя" class="popup__form-input popup__fotos-form-input">
+            </div>
+            <div class="form-block form-block-fotos">
+              <input type="tel" name="fotos__tel" placeholder="Телефон" class="popup__form-input popup__fotos-form-input">
+            </div>
+            <div class="form-block form-block-fotos">
+              <input type="email" name="fotos__email" placeholder="Почта" class="popup__form-input popup__fotos-form-input">
+            </div>
           </div>
-          <textarea name="fotos__area" placeholder="Ваше сообщение" class="popup__form-textarea"></textarea>
+          <div class="form-block">
+            <textarea name="fotos__area" placeholder="Ваше сообщение" class="popup__form-textarea"></textarea>
+          </div>
           <label class="checkbox-wrapper">
             <div class="checkbox-wrapper__checkbox">
               <input type="checkbox" id="popup-fotos__checkbox" name="popup-fotos__checkbox" checked class="section1__form-checkbox">
@@ -350,11 +358,19 @@
         <div class="popup__desc popup-ask__desc">Оставьте Ваши данные или напишите интересующий вас вопрос и в течении 10 минут мы свяжемся с Вами</div>
         <form action="#" method="#" id="popup-ask__form" class="popup-ask__form">
           <div class="popup__form-container popup-ask__form-container">
-            <input type="text" name="ask__name" placeholder="Имя" class="popup__form-input popup__ask-form-input">
-            <input type="tel" name="ask__tel" placeholder="Телефон" class="popup__form-input popup__ask-form-input">
-            <input type="email" name="ask__email" placeholder="Почта" class="popup__form-input popup__ask-form-input">
+            <div class="form-block form-block-ask">
+              <input type="text" name="ask__name" placeholder="Имя" class="popup__form-input popup__ask-form-input">
+            </div>
+            <div class="form-block form-block-ask">
+              <input type="tel" name="ask__tel" placeholder="Телефон" class="popup__form-input popup__ask-form-input">
+            </div>
+            <div class="form-block form-block-ask">
+              <input type="email" name="ask__email" placeholder="Почта" class="popup__form-input popup__ask-form-input">
+            </div>
           </div>
-          <textarea name="ask__area" placeholder="Ваше сообщение" class="popup__form-textarea"></textarea>
+          <div class="form-block">
+            <textarea name="ask__area" placeholder="Ваше сообщение" class="popup__form-textarea"></textarea>
+          </div>
           <label class="checkbox-wrapper">
             <div class="checkbox-wrapper__checkbox">
               <input type="checkbox" id="popup-ask__checkbox" name="popup-ask__checkbox" checked class="section1__form-checkbox">
@@ -370,6 +386,49 @@
             <button type="submit" href="#" class="btn popup__btn-1 popup__btn-ask">Задать вопрос</button>
           </div>
         </form>
+      </div>
+    </div>
+  </div>
+  <div class="popup-review hidden">
+    <div class="overlay">
+      <div class="popup__container popup-review_container">
+        <div class="popup__btn-close popup-btn__close-review"></div>
+        <div class="popup__title popup-review__title">Оставьте ваш отзыв</div>
+        <div class="popup__desc popup-review__desc">Если Вы воспользовались нашими услугами - напишите отзыв о работе с нами!</div>
+        <form action="#" method="#" id="popup-review__form" class="popup-review__form">
+          <div class="popup__form-container popup-review__form-container">
+            <div class="form-block form-block-review">
+              <input type="text" name="review__name" placeholder="Имя" class="popup__form-input popup__review-form-input">
+            </div>
+          </div>
+          <div class="form-block form-block-review">
+            <textarea name="review__area" placeholder="Ваше сообщение" class="popup__form-textarea"></textarea>
+          </div>
+          <label class="checkbox-wrapper">
+            <div class="checkbox-wrapper__checkbox">
+              <input type="checkbox" id="popup-review__checkbox" name="popup_review__checkbox" checked class="section1__form-checkbox">
+              <div class="checkbox popup__checkbox"><span class="checkbox__circle"></span><span class="checkbox__yes">да</span><span class="checkbox__no">нет</span></div>
+            </div>
+            <div class="checkbox-wrapper__text checkbox-wrapper__text-popup">
+              <div class="checkbox-wrapper__text-1">Даю согласие на <a href="#">Обработку персональных данных</a>
+              </div>
+              <div class="checkbox-wrapper__text-2">*Ваши данные не будут переданы третьим лицам</div>
+            </div>
+          </label>
+          <div class="popup__btn-wrapper">
+            <button type="submit" href="#" class="btn popup__btn-1 popup__btn-review">Оставить отзыв</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="popup-success hidden">
+    <div class="overlay">
+      <div class="popup__container popup-success_container-big">
+        <div class="popup__btn-close popup-btn__close-success"></div>
+        <div class="popup__title popup-success__title">Благодарим за обращение</div>
+        <div class="popup__desc popup-success__desc">Ваши данные отправлены, мы свяжемся с Вами в течении 2 минут</div>
+        <div class="cat-foto"></div>
       </div>
     </div>
   </div>
